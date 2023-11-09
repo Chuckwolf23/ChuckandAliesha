@@ -14,8 +14,14 @@ let result3 = addFive(37); // returns 42
 
 
 ***********************************************************************/
+// create arrow function names "addFive"
+// take in an number arg
+// then return the number + 5
+let addFive = (num) => {
+  let newNum = num + 5
+  return newNum
+}
 
-// Your code here 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
