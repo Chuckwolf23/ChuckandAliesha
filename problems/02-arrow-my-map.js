@@ -17,8 +17,29 @@ let result2 = arrowMyMap(['run', 'Forrest'], yell);
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 ***********************************************************************/
+//create fat arrow function "arrowMyMap"// take in array and cb as args
+const arrowMyMap = (array , cb) => {
+// create an empty array
+let newArr = []
+//create a for loop
+for(let i = 0; i < array.length; i++){
+  // create a variable for I
+  let big = array[i]
+//create variable for resuts from element going through call back
+let small = cb(big)
+//push to an array
+newArr.push(small)
+}
+//return new array of elements
+return newArr
+}
+let result1 = arrowMyMap([100, 25, 81, 64], Math.sqrt);
+console.log(result1);   // [ 10, 5, 9, 8 ]
 
-// Your code here 
+const yell = el => el.toUpperCase() + '!'
+
+let result2 = arrowMyMap(['run', 'Forrest'], yell);
+console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
