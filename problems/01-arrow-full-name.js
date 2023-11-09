@@ -13,9 +13,16 @@ let p2 = {firstName: 'Charlie', lastName: 'Brown', age: 9};
 arrowGetFullName(p2); // => 'Charlie Brown'
 
 ***********************************************************************/
-
-// Your code here 
-
+// create a function using arrow syntax "arrowGetFullName"
+// take in a person obj
+// return the string cantining their full name
+const arrowGetFullName =(person) => {
+  return person.firstName +" "+ person.lastName
+}
+let p1 = {firstName: 'John', lastName: 'Doe'};
+arrowGetFullName(p1); // => 'John Doe'
+let p2 = {firstName: 'Charlie', lastName: 'Brown', age: 9};
+arrowGetFullName(p2); // => 'Charlie Brown'
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
